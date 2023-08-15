@@ -1,0 +1,283 @@
+body, ul, li, a, h1 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.wrapper{
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+
+}
+.conteiner{
+    width: 100%;
+    //height: 100vh;
+}
+.blockOne{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/bgc.png);
+    color: white;
+    position: relative;
+    padding: 0 20px;
+
+    &_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 40px 0 50px;
+        
+        
+        
+        li {
+             margin-right: 50px;
+            a {
+                color: white;
+                font-size: 16px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &_rightBar{
+
+        img{
+            margin-left: 60px;
+        }
+        span{
+            margin-left: 10px;
+            color: white;
+        }
+    }
+}
+
+
+.navBar{
+    border-bottom: 1px solid white;
+    display: flex;
+    padding: 15px;
+}
+
+.title{
+    width: 535px;
+    height: 225px;
+    margin: 200px 0 0 150px;
+
+    // position: absolute;
+    // top: 200px;
+    // left: 300px;
+
+    h1{
+        font-size: 64px;
+    }
+
+    &_about{
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+.navigation{
+    display: flex;
+     width: 30%;
+    height: 50vh;
+    // width: 450px;
+    // height: 300px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 20px;
+    right: 200px;
+
+    &_block{
+        width: 180px;
+        height: 120px;
+         margin-bottom: 20px;
+        padding: 20px 0 10px 20px;
+
+        h1{
+            font-size: 18px;
+            
+        }
+    }
+}
+
+
+
+
+// block-2
+
+
+.blockTwo {
+    background-color: rgba(35, 120, 252, 1);
+
+    padding: 20px 200px 20px 150px;
+
+    &_lists {
+       display: flex;
+        width: 100%;
+        justify-content: space-between;    
+        
+            li {
+                
+                
+                h1{
+                    font-size: 30px;
+                    margin-bottom: 35px;
+                    color: white;
+                }
+                a {
+                    display: block;
+                    font-size: 16px;
+                    color: white;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+// block-3
+
+.events{
+    background-color: rgba(255, 196, 30, 1);
+    // padding: 60px 100px;
+    padding: 20px 200px 20px 150px;
+
+
+    &_title {
+        font-size: 30px;
+        margin-bottom: 55px;
+
+    }
+
+    &_lists {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+
+
+        li {
+            width: 31%;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 1139px) {
+                width: 48%;
+            }
+
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+
+
+
+            h3 {
+                max-width: 10px 0;
+                color: rgba(246, 64, 79, 1);
+                font-size: 21px;
+                text-transform: uppercase;
+
+
+            }
+        }
+    }
+    
+    &_img-wrapp {
+        width: 100%;
+        height: 240px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+}
+
+// block-4
+
+.blockFour{
+    background-color: rgba(250, 243, 227, 1);
+     display: flex;
+    padding: 20px 200px 20px 150px;
+
+    
+
+    &_images{
+        // display: flex;
+        // width: 50%;
+        margin-top: 80px ;
+
+        img{
+            width: 450px;
+            height: 215px;
+        }
+
+    }
+    &_news-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 150px 0 30px 0;
+
+        a{
+            color: black;
+            text-decoration: underline;
+        }
+
+    }
+
+    &_news-discription{
+        display: flex;
+        margin-bottom: 30px;
+
+        
+    }
+    &_new-new{
+        margin-left: 20px;
+            p{
+                
+                color: red;
+            }
+            
+        }
+}
+
+// block-5
+
+.blockFive{
+    background-color: rgba(48, 188, 201, 1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 200px 20px 150px;
+    
+    &_list{
+       width: 25%;
+       margin-bottom: 40px;
+        li {
+            h1{
+                margin-bottom: 20px;
+                color: white;
+            }
+            a{
+                display: block;
+                color: white;
+                margin-bottom: 10px;
+
+            }
+        }
+    }
+
+    &_listFour{
+        display: flex;
+
+        h1{
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        img{
+            margin-right: 20px;
+        }
+    }
+}
+
